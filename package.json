@@ -1,5 +1,5 @@
 {
-  "name": "chronark.com",
+  "name": "moalarbi.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -25,6 +25,8 @@
     "rehype-pretty-code": "^0.10.1",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "3.0.1",
+    "tailwindcss-rtl": "^0.9.0",
+    "three": "^0.178.0",
     "typescript": "^5.2.2"
   },
   "devDependencies": {

@@ -3,8 +3,26 @@
 @tailwind utilities;
 
 @layer base {
+  /* تأثير تحديد حواف النص */
   .text-edge-outline {
-    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   }
-} 
 
+  /* تأثير كتابة من اليسار لليمين */
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* كلاس يستخدم أنميشن الكتابة */
+  .animate-typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2.5s steps(20, end) forwards;
+    direction: ltr;
+  }
+}
