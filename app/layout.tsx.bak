@@ -5,7 +5,6 @@ import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://moalarbi.com"),
   title: {
     default: "moalarbi.com",
     template: "%s | moalarbi.com",
@@ -13,7 +12,8 @@ export const metadata: Metadata = {
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
     title: "moalarbi.com",
-    description: "Co-founder of unkey.dev and founder of planetfall.io",
+    description:
+      "Co-founder of unkey.dev and founder of planetfall.io",
     url: "https://moalarbi.com",
     siteName: "moalarbi.com",
     images: [
@@ -64,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ar" dir="rtl" className={`${ibmArabic.variable} ${calSans.variable}`}>
+    <html lang="ar" dir="rtl" className={[ibmArabic.variable, calSans.variable].join(" ")}>
       <head>
         <Analytics />
       </head>
